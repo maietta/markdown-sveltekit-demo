@@ -1,12 +1,19 @@
-<script>
-    export let data;
+<script lang="ts">
+    interface Props {
+        data: {
+            markdownContent: string;
+        };
+    }
+
+    let { data }: Props = $props();
     let { markdownContent } = data;
 </script>
+
 
 {#if markdownContent}
     {@html markdownContent}
 {:else}
-    <p>No markdown content available.</p>
+    <p>Content not found</p>
 {/if}
 
 <form method="POST" action="/api/contact">
