@@ -3,9 +3,7 @@
 declare global {
 	namespace App {
 		// interface Error {}
-		interface Locals {
-			markdownContent?: any | null; // null if file doesn't exist
-		}
+		// interface Locals {}
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}

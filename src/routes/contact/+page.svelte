@@ -1,10 +1,10 @@
-<script lang="ts">
-    export let data: any;
-    let { content } = data;
+<script>
+    export let data;
+    let { markdownContent } = data;
 </script>
 
-{#if content}
-    {@html content}
+{#if markdownContent}
+    {@html markdownContent}
 {:else}
     <p>No markdown content available.</p>
 {/if}
